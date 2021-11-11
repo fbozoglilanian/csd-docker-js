@@ -1,0 +1,38 @@
+Dividir (slicing) la funcionalidad en al menos 20 incrementos (User stories)
+Elegir el MVP (producto mínimo valioso)
+Construir incrementalmente hasta lograr el MVP
+(opcional) Construir algunas historias más.
+Avisar en Discord cuando está listo.
+
+Los criterios de éxito de ejercicio:
+Poder facturar en al menos CA
+Tener incrementos muy chicos.
+Avisar en Discord con evidencia en cada incremento
+
+TIempos sugeridos:
+
+10/15 Slicing
+40 Programar Incrementos
+
+-----------------------------------
+# Empezamos pensando que no hay productos mayores a 1000$ y el estado donde se vende más (asumimos AL)
+# Suponemos que el descuento es sobre el precio neto sin Impuestos.
+((price-price * descuento) * tasa) + (price-price * descuento)
+
+Vender 1 producto de 1000$ en AL (tasa 4.00%), descuento 0%
+Vender 1 producto de 1001$ en AL (tasa 4.00%), descuento 3%
+Vender 1 producto de 5001$ en AL (tasa 4.00%), descuento 5%
+Vender 5 producto de 1001$ en AL (tasa 4.00%), descuento 5%
+Vender 1 producto de 1000$ en CA (tasa 8.25%), descuento 0%
+Vender 2 producto de 1000$ en CA (tasa 8.25%), descuento 3%
+Vender 1 producto de 1000$ en UT (tasa 6.85%), descuento 0%
+Vender 1 producto de 1000$ en NV (tasa 8.00%), descuento 0%
+Vender 1 producto de 1000$ en TX (tasa 6.25%), descuento 0%
+Vender 1 producto de 10000$ en TX (tasa 6.25%), descuento 10%
+Vender 2 producto de 1000$ en UT (tasa 6.85%), descuento 3%
+Vender 6 producto de 1000$ en UT (tasa 6.85%), descuento 5%
+Vender 8 producto de 1000$ en UT (tasa 6.85%), descuento 7%
+Vender 11 producto de 1000$ en UT (tasa 6.85%), descuento 10%
+Vender 51 producto de 1000$ en UT (tasa 6.85%), descuento 15%
+Vender 0 producto o en blanco, mostrar mensaje de que debe indicar una cantidad
+Campo de price en blanco o en cero, mostrar mensaje de que se debe poner una cantidad
