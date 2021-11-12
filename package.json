@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "test": "jest --watch",
-        "test-once": "jest",
+        "test": "jest --watch ./invoice",
+        "test-once": "jest --verbose ./invoice",
         "start": "parcel invoice.html",
         "build": "parcel build invoice.html --public-url ./"
     },

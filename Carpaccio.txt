@@ -15,24 +15,23 @@ TIempos sugeridos:
 40 Programar Incrementos
 
 -----------------------------------
-# Empezamos pensando que no hay productos mayores a 1000$ y el estado donde se vende más (asumimos AL)
+# Empezamos pensando que no hay productos mayores a 1000$ y el estado donde se vende más (asumimos CA)
 # Suponemos que el descuento es sobre el precio neto sin Impuestos.
 ((price-price * descuento) * tasa) + (price-price * descuento)
 
+Vender 1 producto de 1000 en CA (tasa 8.25%), descuento 0%
+Vender 1 producto de 1001$ en CA (tasa 8.25%), descuento 3%
+Vender 1 producto de 5001$ en CA (tasa 8.25%), descuento 5%
+Vender 5 producto de 1001$ en CA (tasa 8.25%), descuento 5%
+Vender 8 producto de 1000$ en CA (tasa 8.25%), descuento 7%
+Vender 1 productos de 10001$ en CA (tasa 8.25%), descuento 10%
+Vender 51 productos de 1000$ en CA (tasa 8.25%), descuento 15%
+--- MVP ---
 Vender 1 producto de 1000$ en AL (tasa 4.00%), descuento 0%
-Vender 1 producto de 1001$ en AL (tasa 4.00%), descuento 3%
-Vender 1 producto de 5001$ en AL (tasa 4.00%), descuento 5%
-Vender 5 producto de 1001$ en AL (tasa 4.00%), descuento 5%
-Vender 1 producto de 1000$ en CA (tasa 8.25%), descuento 0%
-Vender 2 producto de 1000$ en CA (tasa 8.25%), descuento 3%
 Vender 1 producto de 1000$ en UT (tasa 6.85%), descuento 0%
 Vender 1 producto de 1000$ en NV (tasa 8.00%), descuento 0%
 Vender 1 producto de 1000$ en TX (tasa 6.25%), descuento 0%
-Vender 1 producto de 10000$ en TX (tasa 6.25%), descuento 10%
-Vender 2 producto de 1000$ en UT (tasa 6.85%), descuento 3%
-Vender 6 producto de 1000$ en UT (tasa 6.85%), descuento 5%
-Vender 8 producto de 1000$ en UT (tasa 6.85%), descuento 7%
-Vender 11 producto de 1000$ en UT (tasa 6.85%), descuento 10%
-Vender 51 producto de 1000$ en UT (tasa 6.85%), descuento 15%
+Vender 1 producto de 1000$ en UT (tasa 6.85%), descuento 0%
+--- Pruebas ---
 Vender 0 producto o en blanco, mostrar mensaje de que debe indicar una cantidad
 Campo de price en blanco o en cero, mostrar mensaje de que se debe poner una cantidad
